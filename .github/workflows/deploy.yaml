@@ -21,5 +21,11 @@ jobs:
                 username: ubuntu
                 key : ${{ secrets.AWS_GIT_ACTION_CI }}
                 port: 22
-                script: whoami
+                script: |
+                  cd /home/ubuntu/test_ci
+                  git pull origin main
+                  npm install
+                  npm run build
+                  npm run start
+                  # ./scripts/deploy.sh
 
