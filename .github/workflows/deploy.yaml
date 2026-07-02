@@ -20,6 +20,6 @@ jobs:
                 host: 100.54.142.163
                 username: ubuntu
                 key : ${{ secrets.AWS_GIT_ACTION_CI }}
-                port: 20
+                port: 22
                 script: whoami
 
