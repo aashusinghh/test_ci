@@ -17,7 +17,7 @@ jobs:
             - name: Execute remote SSH commands using password
               uses: appleboy/ssh-action@v1.2.0
               with:
-                host: 100.54.142.163
+                host: 100.56.251.230
                 username: ubuntu
                 key : ${{ secrets.AWS_GIT_ACTION_CI }}
                 port: 22
